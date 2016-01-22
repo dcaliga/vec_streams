@@ -1,0 +1,56 @@
+ data dependence file for ex_vec_streams.mc
+ ------  data dependence for loop 4 1 12
+      fg ili ilt nme sst sct typ nst  lp  rg fsb flags
+  1:  48 223  63  44   1   1   l   1   4   0   0 <iu >    44~ <n>
+  2:  48 826  63  11   2   1   l   1   4   0   3 <64 ar >    11~ <bankc->CountsL>
+  3:  48 827  63  46   0   0   s   1   4   0   0 <64 sc >    46~ <i64>
+        4 flow #<=.                            
+        3 outp  <..                            
+  4:  48 232  64  46   0   0   l   1   4   0   0 <64 sc >    46~ <i64>
+        3 anti  <..                            
+  5:  48 238  64   0   0   0   p   1   4   0   0 <sc >
+  6:  48 241  65  48   0   0   l   1   4   0   0 <sc >    48~ <cnta>
+  7:  48 244  65   0   0   0   p   1   4   0   0 <sc >
+  8:  48 247  66  47   0   0   l   1   4   0   0 <sc >    47~ <cntb>
+  9:  48 249  66   0   0   0   p   1   4   0   0 <sc >
+ 10:  48 223  68  44   4   1   l   1   4   0   0 <iu >    44~ <n>
+ 11:  48 253  68  44   0   0   s   1   4   0   0 <sc >    44~ <n>
+       11 outp  <..                            
+ILT 63: LD ILI 826 --> 329 
+ILT 63: ST ILI 827 --> 224 
+ Loop 4 is contained in block 133
+ ------  data dependence for loop 1 12 38
+      fg ili ilt nme sst sct typ nst  lp  rg fsb flags
+ 12:  11  52  15   0   0   0   p   1   1   0   0 <sc >
+ 13:  11  53  16  23   0   0   l   1   1   0   0 <64 sc >    23~ <i64>
+ 14:  11  46  16  22   1   1   l   1   1   0   0 <iu >    22~ <i>
+ 15:  11 829  16  11   2   1   s   1   1   0   3 <64 ar >    11~ <bankc->CountsL>
+ 16:  11  53  17  23   0   0   l   1   1   0   0 <64 sc >    23~ <i64>
+ 17:  11  65  17   0   0   0   p   1   1   0   0 <sc >
+ 18:  11  67  18  26   0   0   l   1   1   0   0 <sc >    26~ <cnta>
+ 19:  11  46  18  22   4   1   l   1   1   0   0 <iu >    22~ <i>
+ 20:  11  75  18   0   0   0   p   1   1   0   0 <sc >
+ 21:  11  76  19  25   0   0   l   1   1   0   0 <sc >    25~ <cntb>
+ 22:  11  46  19  22   5   1   l   1   1   0   0 <iu >    22~ <i>
+ 23:  11  83  19   0   0   0   p   1   1   0   0 <sc >
+ 24:  11  67  20  26   0   0   l   1   1   0   0 <sc >    26~ <cnta>
+ 25:  11  67  20  26   0   0   l   1   1   0   0 <sc >    26~ <cnta>
+ 26:  11  94  20  29   0   0   s   1   1   0   0 <sc ex >    29~ <na>
+       30 flow #.=.                            
+ 27:  11  76  21  25   0   0   l   1   1   0   0 <sc >    25~ <cntb>
+ 28:  11  76  21  25   0   0   l   1   1   0   0 <sc >    25~ <cntb>
+ 29:  11 101  21  30   0   0   s   1   1   0   0 <sc ex >    30~ <nb>
+       33 flow #.=.                            
+ 30:  11 102  22  29   0   0   l   1   1   0   0 <sc ex >    29~ <na>
+ 31:  11  46  22  22   6   1   l   1   1   0   0 <iu >    22~ <i>
+ 32:  11 108  22   0   0   0   p   1   1   0   0 <sc >
+ 33:  11 109  23  30   0   0   l   1   1   0   0 <sc ex >    30~ <nb>
+ 34:  11  46  23  22   7   1   l   1   1   0   0 <iu >    22~ <i>
+ 35:  11 115  23   0   0   0   p   1   1   0   0 <sc >
+ 36:  11  46  25  22   8   1   l   1   1   0   0 <iu >    22~ <i>
+ 37:  11 119  25  22   0   0   s   1   1   0   0 <sc >    22~ <i>
+       37 outp  <..                            
+ILT 16: ST ILI 829 --> 335 
+ILT 20: ST ILI 94 --> 127 
+ILT 21: ST ILI 101 --> 274 
+ Loop 1 is contained in block 137

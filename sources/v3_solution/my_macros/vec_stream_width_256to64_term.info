@@ -1,0 +1,36 @@
+BEGIN_DEF "vec_stream_width_256to64_term"
+    MACRO             = "VEC_STREAM_WIDTH_256TO64_TERM";
+    STATEFUL          = NO;
+    EXTERNAL          = YES;
+    STREAM_LIST       = YES;
+    STREAM_PARAMS     = "STREAMS=2";
+    INIZIO_FLAGS      = "has_str_dbg_arg", "has_map_dbg_arg";
+
+    STREAM_INPUTS = 1:
+      SI0 = 256 BITS, PORTS:
+                DATA      = "DIN",
+                VALID     = "VIN",
+                TAKE      = "TAKE",
+                TERMINATE = "TERMINATE_IN"
+      ;
+
+    STREAM_OUTPUTS = 1:
+      SO0 =   64 BITS, FIFO(32,16), PORTS:
+                 DATA      = "DOUT",
+                 VALID     = "VOUT",
+                 STALL     = "STALL",
+                 TERMINATE = "TERMINATE_OUT"
+      ;
+
+    INPUTS = 1:
+      I0 = INT  1 BITS  (START)
+      ;
+    OUTPUTS = 1:
+      O0 = INT  1 BITS  (DONE)
+      ;
+
+    IN_SIGNAL  :  1 BITS            "CLK"          = "CLOCK";
+    IN_SIGNAL  :  1 BITS            "CLR"          = "par_region_reset";
+
+
+END_DEF

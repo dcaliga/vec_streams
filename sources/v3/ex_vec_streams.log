@@ -1,0 +1,33 @@
+started '/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/bin/mcc' on Fri Jan 22 13:03:26 2016 with args:
+    -log
+    -DTEST_COMPILE
+    -macropath
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros
+    -srcinfopath
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info
+    -maptarget
+    map_m
+    -DCARTE_EX_MODE_DBG
+    -I
+    .
+    -I
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/include
+    -I
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/include/src7
+    -user_debug
+    ex_vec_streams.mc
+
+  paths and options:
+    MC_ROOT        = /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145
+    SRC_VERSION    = comp
+    QUARTUS        = /opt/altera13.0/quartus
+    INCLUDE_PATH   = /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/include
+
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/bin/srccc -DTEST_COMPILE -srcinfopath /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info -DCARTE_EX_MODE_DBG -I. -I/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/include -I/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/include/src7 -Mq,4,2 -Mvect=wrp -maptarget map_m -I/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/include -D_STDIO_H -DMAPM -chip StratixIV -machine src7 -V -O4 ex_vec_streams.mc
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/bin/martello -srcinfopath /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info -user_debug -maptarget map_m -DMAPM -chip StratixIV -machine src7 ex_vec_streams.cfg
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/bin/martello_dyn -srcinfopath /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info -user_debug ex_vec_streams.cfg
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/bin/dinamite -srcinfopath /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info ex_vec_streams.dcfg
+    /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/bin/cgen -srcinfopath /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info -maptarget map_m -DMAPM -chip StratixIV -machine src7 ex_vec_streams.dfg
+
+  mcc:  /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/bin/srccc -DTEST_COMPILE -srcinfopath /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info -DCARTE_EX_MODE_DBG -I. -I/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/include -I/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/include/src7 -Mq,4,2 -Mvect=wrp -maptarget map_m -I/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/include -D_STDIO_H -DMAPM -chip StratixIV -machine src7 -V -O4 ex_vec_streams.mc
+  mcc:  /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/comp/bin/martello -srcinfopath /net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/carte.info:/net/forbin66.srccomp.com/dvl/builds/installs/160119-1145/opt/srcci/carte54/lib/macros/map_m/src_ieee_v1.info -user_debug -maptarget map_m -DMAPM -chip StratixIV -machine src7 ex_vec_streams.cfg
